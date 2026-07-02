@@ -8,16 +8,16 @@
 # See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 # Default owner for everything not matched by a more specific rule
-*                               @REPLACE_WITH_DEFAULT_OWNER
+*                               @ruo2rt
 
 # Department folders
-engineering/                    @REPLACE_WITH_TECH_LEAD
-product/                        @REPLACE_WITH_PRODUCT_LEAD
-testing/                        @REPLACE_WITH_QA_LEAD
-marketing/                      @REPLACE_WITH_MARKETING_LEAD
-design/                         @REPLACE_WITH_DESIGN_LEAD
-studio-operations/              @REPLACE_WITH_OPS_LEAD
+engineering/                    @ruo2rt
+product/                        @ruo2rt
+testing/                        @ruo2rt
+marketing/                      @ruo2rt
+design/                         @ruo2rt
+studio-operations/              @ruo2rt
 
 # Shared docs — require sign-off from whoever owns the team setup
-docs/                           @REPLACE_WITH_DEFAULT_OWNER
-CHANGELOG.md                    @REPLACE_WITH_DEFAULT_OWNER
+docs/                           @ruo2rt
+CHANGELOG.md                    @ruo2rt

@@ -20,8 +20,6 @@ version and the team version, then record the change in
 | senior-infrastructure-architect | engineering | 1.1.0 |
 | software-developer-python | engineering | 1.1.0 |
 | software-developer-javascript | engineering | 1.1.0 |
-| software-developer-java | engineering | 1.1.0 |
-| software-developer-php | engineering | 1.1.0 |
 | software-developer-scripting | engineering | 1.1.0 |
 | software-developer-ai | engineering | 1.1.0 |
 | software-developer-mobile | engineering | 1.0.0 |
@@ -44,12 +42,4 @@ version and the team version, then record the change in
 | user-acceptance-test-expert | testing | 1.1.0 |
 | it-infrastructure-expert | studio-operations | 1.2.0 |
 | customer-support | studio-operations | 1.1.0 |
-| purchasing-expert | studio-operations | 1.1.0 |
-| finance-and-controlling-expert | studio-operations | 1.1.0 |
-| people-and-talent-expert | studio-operations | 1.0.0 |
-| legal-and-contracts-expert | studio-operations | 1.0.0 |
-| customer-success-manager | studio-operations | 1.0.0 |
-| sales-engineer | marketing | 1.1.0 |
-| marketing-and-communications-expert | marketing | 1.1.0 |
-| social-media-expert | marketing | 1.1.0 |
 | ux-and-design-expert | design | 1.1.0 |
