@@ -1,10 +1,9 @@
 # Frontend
 
-Browser-based frontend for the plant performance KPI platform. This directory
-will hold the user-facing web application.
+Browser-based frontend for the plant performance KPI platform. This directory will hold the user-facing web application.
 
-> **Status: skeleton.** No code yet. The framework and tooling will be chosen as
-> requirements firm up and recorded as an [ADR](../docs/decisions/).
+> **Status: skeleton.** No code yet. The framework and tooling will be chosen as requirements firm up and recorded as an
+> [ADR](../docs/decisions/).
 
 ## Intended contents
 
@@ -13,5 +12,4 @@ will hold the user-facing web application.
 - Build and asset tooling.
 - Automated tests, per [`../docs/quality-standards.md`](../docs/quality-standards.md).
 
-Follow the accessibility target stated in
-[`../docs/repo-setup.md`](../docs/repo-setup.md) for all user-facing work.
+Follow the accessibility target stated in [`../docs/repo-setup.md`](../docs/repo-setup.md) for all user-facing work.

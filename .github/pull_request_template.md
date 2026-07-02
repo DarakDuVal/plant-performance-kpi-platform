@@ -14,8 +14,8 @@
 
 ## Agent changes (complete for every modified agent file)
 
-| Agent file | Old version | New version |
-| --- | --- | --- |
+| Agent file                                             | Old version    | New version    |
+| ------------------------------------------------------ | -------------- | -------------- |
 | <!-- e.g. engineering/senior-software-developer.md --> | <!-- 1.0.0 --> | <!-- 1.1.0 --> |
 
 ## Versioning checklist
