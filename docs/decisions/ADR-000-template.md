@@ -5,7 +5,8 @@
 
 ## Context
 
-Describe the situation, forces, and constraints that make a decision necessary. Include relevant background that a newcomer would need to understand why this decision was needed.
+Describe the situation, forces, and constraints that make a decision necessary. Include relevant background that a
+newcomer would need to understand why this decision was needed.
 
 ## Decision
 
@@ -13,22 +14,26 @@ State the decision clearly in one or two sentences. Start with "We will …" or 
 
 ## Consequences
 
-List the consequences of the decision — positive, negative, and neutral. Include trade-offs explicitly so future contributors understand what was given up.
+List the consequences of the decision — positive, negative, and neutral. Include trade-offs explicitly so future
+contributors understand what was given up.
 
 **Positive:**
+
 - …
 
 **Negative / risks:**
+
 - …
 
 **Neutral:**
+
 - …
 
 ## Alternatives considered
 
 | Alternative | Reason not chosen |
-| --- | --- |
-| … | … |
+| ----------- | ----------------- |
+| …           | …                 |
 
 ## References
 

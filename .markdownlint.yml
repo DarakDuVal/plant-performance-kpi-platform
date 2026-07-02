@@ -22,3 +22,8 @@ MD033: false
 
 # First line need not be a top-level heading (for YAML-frontmatter files)
 MD041: false
+
+# Allow repeated section headings under different parents
+# (e.g. "Added"/"Changed" per version in the Keep a Changelog format)
+MD024:
+  siblings_only: true
