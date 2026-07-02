@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Repurposed this repository from the `get-IT-done` template catalog into the
+  **plant performance KPI platform** workspace. Rewrote `README.md` and `SETUP.md`
+  to describe the web application (backend + database + browser frontend) and drop
+  the "Use this template" provisioning framing, and updated
+  `.github/copilot-instructions.md` so application code is expected here alongside
+  the agent catalog.
 - Tailored the repository as a **clone-and-go template** for the agents to apply
   to a real software project (not this catalog itself): reframed `README.md` and
   removed the external `DarakDuVal/agents` reference.
@@ -30,6 +36,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Web-app skeleton directories `backend/`, `frontend/`, and `database/`, each with
+  a `README.md` placeholder describing its intended contents, plus a root
+  `.gitignore` for the application stack.
 - `docs/repo-setup.md` — repository setup standard that lists the items every
   new repo or migration should include before work starts, split into developer
   experience (DX) and user experience (UX) checklists, plus repository

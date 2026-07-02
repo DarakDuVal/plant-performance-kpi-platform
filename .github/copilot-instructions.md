@@ -1,12 +1,19 @@
-# Copilot instructions for get-IT-done
+# Copilot instructions for plant-performance-kpi-platform
 
-This repository is a **catalog of reusable AI agent role definitions** for an
-agentic software and IT company. It contains documentation and prompts — there is
-no application code to build or run. Treat every change as a change to a prompt
-library and keep the catalog clean, consistent, and reviewable.
+This repository is the **workspace for the plant performance KPI platform** — a
+contained web application with a backend, a database, and a browser frontend. It
+also carries an **embedded agentic delivery team**: a catalog of reusable AI
+agent role definitions plus the process docs the agents follow to build the app.
+
+Both the application and the agent catalog live here side by side. Keep the
+application code clean and tested, and keep the agent catalog consistent and
+reviewable.
 
 ## What lives here
 
+- Application skeleton: `backend/` (service, API, data access), `frontend/`
+  (browser UI), and `database/` (schema, migrations, seed data). These start as
+  placeholders and are filled in over successive iterations.
 - Department folders (`data/`, `delivery-management/`, `design/`,
   `engineering/`, `marketing/`, `product/`, `security/`,
   `studio-operations/`, `testing/`) each contain one markdown file per agent
@@ -47,8 +54,9 @@ the same department.
 
 ## Important boundaries
 
-- This repository is the **catalog**. Never commit customer documents or
-  generated delivery output here — keep that work in a separate engagement
-  workspace, as described in `docs/delivery-loop.md`.
-- This project is documentation-only. Do not add build tooling, dependencies, or
-  application code unless explicitly requested.
+- Application code belongs in `backend/`, `frontend/`, and `database/`. Build
+  it to the bar in `docs/quality-standards.md` and `docs/repo-setup.md`.
+- The agent catalog (department folders and `docs/`) defines *how the agents
+  work*; keep it consistent and reviewable when you change roles or process.
+- Do not commit secrets or generated build output; keep them out of Git via
+  `.gitignore`.
