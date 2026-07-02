@@ -34,5 +34,5 @@ assignees: ""
 
 ## Next step
 
-Assign to `customer-support` agent for intake and triage (delivery loop step 1).
-See `docs/delivery-loop.md` for the full step-by-step.
+Assign to `customer-support` agent for intake and triage (delivery loop step 1). See `docs/delivery-loop.md` for the
+full step-by-step.

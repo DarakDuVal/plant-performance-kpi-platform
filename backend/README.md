@@ -1,11 +1,10 @@
 # Backend
 
-Backend service for the plant performance KPI platform. This directory will hold
-the API, business logic, and database access for the application.
+Backend service for the plant performance KPI platform. This directory will hold the API, business logic, and database
+access for the application.
 
-> **Status: skeleton.** No code yet. The language, framework, and API style will
-> be chosen as requirements firm up and recorded as an
-> [ADR](../docs/decisions/).
+> **Status: skeleton.** No code yet. The language, framework, and API style will be chosen as requirements firm up and
+> recorded as an [ADR](../docs/decisions/).
 
 ## Intended contents
 

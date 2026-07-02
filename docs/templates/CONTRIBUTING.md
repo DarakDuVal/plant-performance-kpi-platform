@@ -1,7 +1,7 @@
 # Contributing
 
-Thanks for contributing. This guide gets you from clone to first pull request.
-Adapt it to your workspace's stack and tools.
+Thanks for contributing. This guide gets you from clone to first pull request. Adapt it to your workspace's stack and
+tools.
 
 ## Quick start (time-to-first-PR)
 
@@ -19,8 +19,7 @@ If there is no `Makefile`, document the equivalent commands here.
 ## Branching and commits
 
 - Branch from `main`: `git switch -c <type>/<short-description>`.
-- Use [Conventional Commits](https://www.conventionalcommits.org/) for messages
-  (for example `feat: add user search`).
+- Use [Conventional Commits](https://www.conventionalcommits.org/) for messages (for example `feat: add user search`).
 - Keep changes small and focused; one logical change per pull request.
 
 ## Before you open a pull request
@@ -33,5 +32,5 @@ If there is no `Makefile`, document the equivalent commands here.
 
 ## Code review
 
-Open a pull request and request review from the relevant `CODEOWNERS`. Address
-review feedback by pushing follow-up commits to the same branch.
+Open a pull request and request review from the relevant `CODEOWNERS`. Address review feedback by pushing follow-up
+commits to the same branch.
