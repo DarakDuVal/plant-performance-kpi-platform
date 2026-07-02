@@ -1,0 +1,22 @@
+# yamllint configuration
+# See: https://yamllint.readthedocs.io/en/stable/configuration.html
+
+extends: default
+
+rules:
+  # Allow longer lines in GitHub Actions workflow files (URLs, long commands)
+  line-length:
+    max: 120
+    level: warning
+
+  # Allow both quoted and unquoted strings
+  quoted-strings: disable
+
+  # Require consistent indentation of 2 spaces
+  indentation:
+    spaces: 2
+    indent-sequences: true
+    check-multi-line-strings: false
+
+  # Allow multiple documents in one YAML file
+  document-start: disable

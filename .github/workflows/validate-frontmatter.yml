@@ -1,0 +1,109 @@
+name: Quality checks
+
+"on":
+  pull_request:
+    paths:
+      - "**.md"
+      - "**.yml"
+      - "**.yaml"
+      - "**.sh"
+      - "scripts/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-frontmatter:
+    name: Check required frontmatter fields
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate frontmatter in agent files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          REQUIRED_FIELDS=(name version description color tools)
+          ERRORS=0
+
+          while IFS= read -r -d '' file; do
+            # Extract the first frontmatter block (between the opening and closing ---)
+            frontmatter=$(awk '/^---/{found++; if(found==2) exit} found==1 && !/^---/{print}' "$file")
+
+            for field in "${REQUIRED_FIELDS[@]}"; do
+              if ! echo "$frontmatter" | grep -qE "^${field}[[:space:]]*:"; then
+                echo "::error file=${file}::Missing required frontmatter field: '${field}'"
+                ERRORS=$((ERRORS + 1))
+              fi
+            done
+
+            # Check that version follows x.y.z semver
+            version=$(
+              echo "$frontmatter" |
+                grep -E "^version[[:space:]]*:" |
+                head -1 |
+                sed 's/version[[:space:]]*:[[:space:]]*//'
+            )
+            if [ -n "$version" ] && ! echo "$version" | grep -qE "^[0-9]+\.[0-9]+\.[0-9]+$"; then
+              echo "::error file=${file}::Field 'version' must follow semver (x.y.z), got: '${version}'"
+              ERRORS=$((ERRORS + 1))
+            fi
+          done < <(
+            find data delivery-management design engineering marketing product security studio-operations testing \
+              -name "*.md" \
+              ! -name "architecture.md" \
+              ! -name "requirements-template.md" \
+              -print0 2>/dev/null
+          )
+
+          if [ "$ERRORS" -gt 0 ]; then
+            echo ""
+            echo "Found $ERRORS frontmatter error(s). Fix them and re-push."
+            exit 1
+          fi
+
+          echo "All agent files passed frontmatter validation."
+
+  chatmodes:
+    name: Check VS Code chat modes are up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify generated chat modes match agent files
+        run: node scripts/generate-vscode-chatmodes.mjs --check
+
+  lint-markdown:
+    name: Lint Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          globs: "**/*.md"
+          config: ".markdownlint.yml"
+
+  lint-yaml:
+    name: Lint YAML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run yamllint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          config_file: ".yamllint.yml"
+          file_or_dir: "."
+          strict: true
+
+  lint-shell:
+    name: Lint shell scripts and workflows
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run actionlint (validates workflows + ShellCheck on inline bash)
+        uses: raven-actions/actionlint@v2

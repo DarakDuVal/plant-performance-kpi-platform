@@ -1,0 +1,21 @@
+# Git attributes — copy into a workspace as .gitattributes
+
+# Normalize line endings: treat as text and check out with LF.
+* text=auto eol=lf
+
+# Scripts must keep LF even on Windows checkouts.
+*.sh text eol=lf
+
+# Windows-only scripts keep CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Mark common binary types so Git does not try to diff or normalize them.
+*.png binary
+*.jpg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+
+# Hide generated files from diffs and language stats.
+*.lock linguist-generated=true

@@ -1,0 +1,23 @@
+# CODEOWNERS
+#
+# Each line maps a path pattern to one or more GitHub users or teams who are
+# requested as reviewers when a pull request touches those files.
+#
+# Replace the placeholder handles below with real GitHub usernames or team
+# slugs (@your-org/team-name) after creating a workspace from this template.
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything not matched by a more specific rule
+*                               @REPLACE_WITH_DEFAULT_OWNER
+
+# Department folders
+engineering/                    @REPLACE_WITH_TECH_LEAD
+product/                        @REPLACE_WITH_PRODUCT_LEAD
+testing/                        @REPLACE_WITH_QA_LEAD
+marketing/                      @REPLACE_WITH_MARKETING_LEAD
+design/                         @REPLACE_WITH_DESIGN_LEAD
+studio-operations/              @REPLACE_WITH_OPS_LEAD
+
+# Shared docs — require sign-off from whoever owns the team setup
+docs/                           @REPLACE_WITH_DEFAULT_OWNER
+CHANGELOG.md                    @REPLACE_WITH_DEFAULT_OWNER

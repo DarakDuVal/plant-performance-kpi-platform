@@ -1,0 +1,24 @@
+# markdownlint configuration
+# See: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+default: true
+
+# Allow both ATX and Setext headings (ATX preferred)
+MD003:
+  style: atx
+
+# Allow ordered list items to use consistent numbering or sequential
+MD029:
+  style: ordered
+
+# Line length — relaxed for tables and code blocks
+MD013:
+  line_length: 120
+  tables: false
+  code_blocks: false
+
+# Allow inline HTML (used for comments in some agent files)
+MD033: false
+
+# First line need not be a top-level heading (for YAML-frontmatter files)
+MD041: false
