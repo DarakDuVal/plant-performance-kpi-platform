@@ -37,12 +37,21 @@ have.
 - **Reference data model / seed source:** An existing star-schema database held as an Excel file
   (`requirements/examples/db.xlsx`) is the current PowerBI backend source. Its structure and content guide the
   platform's data model and may be used to seed the future database for migration.
+- **UI toolkit (Bosch Frontend Kit):** The UI is built with the Bosch Frontend Kit (part of the Bosch Digital Design
+  System), release 5.1.0 — an HTML / CSS / JS pattern library of the core Bosch UI Kit components. The project
+  references `frontend-kit.js` and the required CSS (loaded in small chunks per the Frontend Kit guidance). The dist
+  folder is available at `requirements/frontend-kit`. The kit is framework-agnostic (confirmed with React, Angular and
+  Vue); it is installed from the BDC Artifactory npm package, CSS may be imported complete or per-component, and
+  `frontend-kit.js` achieves interactivity by toggling CSS classes (a framework may implement the same effect instead).
+  Component markup is taken from the Bosch preview server. (Detailed integration guidance is design/implementation
+  context for the architect and developers, not a separate requirement.)
 
 ## Open questions & dependencies
 
-- **NFR-001 brand guide (dependency):** Compliance is assessed against the Bosch brand guide. Link or attach the
-  applicable brand-guide version so the checklist can be derived; record it in the project context artifact once it
-  exists.
+- **NFR-001 brand guide (dependency):** Compliance is assessed against the Bosch brand guide. Brand-guide assets
+  (logos, colours, fonts, icons, illustrations, supergraphic, and more) are available at `requirements/brandguide`;
+  record the applicable brand-guide version in the project context artifact once it exists. Branding is realised
+  primarily through the Bosch Frontend Kit (see the UI toolkit constraint above).
 
 **Spec status key:** `Specified` (not built) · `Implemented` (built) · `Verified` (built and covered by a passing,
 traceable test) · `Drifted` (code and spec disagree — reconcile before the iteration closes).

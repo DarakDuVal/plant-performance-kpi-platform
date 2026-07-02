@@ -1,0 +1,1 @@
+https://artifactory.boschdevcloud.com/ui/repos/tree/General/lab000089-npm-release-local/@bosch/frontend.kit-npm/-/@bosch
