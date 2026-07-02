@@ -12,6 +12,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- Offboarded 10 agent roles the plant performance KPI platform does not need,
+  finishing the roster trim started in the previous commit (SETUP steps 1–2):
+  removed their `.md` files, `docs/agent-catalog.md` entries, and
+  `docs/delivery-loop.md` references, and dropped the now-empty `marketing/`
+  department (and its `.github/CODEOWNERS` row):
+  - **Engineering**: `software-developer-java`, `software-developer-php`.
+  - **Studio operations**: `purchasing-expert`,
+    `finance-and-controlling-expert`, `people-and-talent-expert`,
+    `legal-and-contracts-expert`, `customer-success-manager`.
+  - **Marketing**: `sales-engineer`, `marketing-and-communications-expert`,
+    `social-media-expert`.
+  - Team version bumped to `3.0.0` (MAJOR — roster change).
 - Repurposed this repository from the `get-IT-done` template catalog into the
   **plant performance KPI platform** workspace. Rewrote `README.md` and `SETUP.md`
   to describe the web application (backend + database + browser frontend) and drop
@@ -36,6 +48,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- `requirements/` — the location where platform requirements are gathered before
+  the delivery loop resolves them: `user-journeys.md`, `user-stories.md`,
+  `functional-requirements.md`, and `non-functional-requirements.md`, linked by
+  stable IDs and a `README.md` that explains the structured, stepwise (iterative,
+  priority-ordered) approach. Referenced from the `README.md` structure diagram.
 - Web-app skeleton directories `backend/`, `frontend/`, and `database/`, each with
   a `README.md` placeholder describing its intended contents, plus a root
   `.gitignore` for the application stack.

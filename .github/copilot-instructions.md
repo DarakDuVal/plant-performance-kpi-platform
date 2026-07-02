@@ -15,7 +15,7 @@ reviewable.
   (browser UI), and `database/` (schema, migrations, seed data). These start as
   placeholders and are filled in over successive iterations.
 - Department folders (`data/`, `delivery-management/`, `design/`,
-  `engineering/`, `marketing/`, `product/`, `security/`,
+  `engineering/`, `product/`, `security/`,
   `studio-operations/`, `testing/`) each contain one markdown file per agent
   role.
 - `docs/` holds the catalog, delivery loop, team manifest, and versioning policy.

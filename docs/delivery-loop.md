@@ -67,7 +67,7 @@ terminating.
    [`task-breakdown-template.md`](task-breakdown-template.md)), each task traceable
    to one or more `FR`/`NFR` IDs. This is the per-iteration backlog.
 6. **Implementation — language-focused developers** (`software-developer-python`,
-   `-javascript`, `-java`, `-php`, `-scripting`, `-ai`, `software-developer-mobile`)
+   `-javascript`, `-scripting`, `-ai`, `software-developer-mobile`)
    Receive the **tasks** (not the whole spec at once) and the design. Produce the
    implementation (code and artifacts) for those tasks in the engagement workspace,
    reinforcing thin increments. For data-driven work, `data-engineer` and
@@ -163,14 +163,7 @@ flowchart TD
 
 ## Supporting roles (engage as needed)
 
-- `sales-engineer`, `marketing-and-communications-expert`, `social-media-expert` —
-  go-to-market and positioning.
-- `purchasing-expert`, `finance-and-controlling-expert` — procurement, budget, and
-  cost transparency.
 - `engineering-manager` — engineering capacity, staffing, and cross-team coordination behind steps 5–6.
-- `people-and-talent-expert` — staffing, onboarding, and talent/capacity for the team.
-- `legal-and-contracts-expert` — customer agreements, IP, and licensing.
-- `customer-success-manager` — post-sale relationship, retention, and feedback into prioritization, most active after step 9.
 
 ## Keep output out of this repository
 

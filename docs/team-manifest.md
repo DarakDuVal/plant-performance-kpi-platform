@@ -1,6 +1,6 @@
 # Team manifest
 
-**Team version: 2.0.0**
+**Team version: 3.0.0**
 
 This manifest is the versioned snapshot of the agent setup. It lists every active
 agent and its current version. Record the **team version** above against a

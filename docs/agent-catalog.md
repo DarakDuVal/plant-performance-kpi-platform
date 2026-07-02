@@ -10,8 +10,6 @@ This catalog is the starting operating model for an AI-native software and IT co
 - **senior-infrastructure-architect**: designs environments, deployment options, infrastructure-as-code (Terraform and similar), and monitoring across the software lifecycle.
 - **software-developer-python**: builds Python backends with Django, Flask, and FastAPI.
 - **software-developer-javascript**: builds frontends with React and Angular, defaulting to TypeScript.
-- **software-developer-java**: builds Java backends and services.
-- **software-developer-php**: builds PHP backends and web applications.
 - **software-developer-scripting**: automates tasks with PowerShell, bash, perl, and similar languages.
 - **software-developer-ai**: embeds AI capabilities and integrates LLMs and agentic workflows.
 - **software-developer-mobile**: builds native iOS and Android mobile apps.
@@ -46,16 +44,6 @@ This catalog is the starting operating model for an AI-native software and IT co
 ### Studio operations
 - **it-infrastructure-expert**: owns platforms, environments, reliability, automation, and internal IT support (helpdesk/sysadmin).
 - **customer-support**: handles incoming issues, feedback loops, and knowledge base quality, and initialises the engagement's project context at intake.
-- **purchasing-expert**: manages suppliers, procurement workflows, and contract readiness.
-- **finance-and-controlling-expert**: plans budgets, tracks performance, and maintains governance.
-- **people-and-talent-expert**: handles staffing, recruiting, onboarding, and talent and capacity planning.
-- **legal-and-contracts-expert**: owns customer agreements, intellectual property, and licensing.
-- **customer-success-manager**: owns post-sale relationships, retention, and account management.
-
-### Marketing
-- **sales-engineer**: supports pre-sales discovery, demos, and technical solutioning.
-- **marketing-and-communications-expert**: owns positioning, campaigns, and message consistency.
-- **social-media-expert**: adapts company messaging to community and platform dynamics.
 
 ### Design
 - **ux-and-design-expert**: shapes user journeys, interaction quality, and design consistency.
@@ -82,8 +70,7 @@ every agent file references it.
 3. **Senior software architect**, **language-focused software developers** (including **mobile**), **senior software developer**, **UX and design expert**, and the **unit test expert** shape delivery, with the **data engineer**, **data analyst**, and **database administrator** handling data-driven work.
 4. **Security engineer** and **compliance and data protection expert** review across design, implementation, and validation to keep delivery secure and compliant.
 5. **Senior infrastructure architect**, **IT infrastructure expert**, and **devops release engineer** prepare environments, deployment, and releases, with the **integration and systems test expert** and **load and performance test expert** validating system behavior, scale, and readiness.
-6. **Sales engineer**, **marketing and communications expert**, **social media expert**, and **customer success manager** support go-to-market, adoption, and retention, with the **technical writer** producing accompanying documentation.
-7. **Customer support**, **purchasing expert**, **finance and controlling expert**, **engineering manager**, **people and talent expert**, and **legal and contracts expert** keep the business operational and scalable.
+6. **Customer support** and **engineering manager** keep the business operational, with the **technical writer** producing accompanying documentation.
 
 ## Customization guidance
 

@@ -27,6 +27,7 @@ plant-performance-kpi-platform/
 ├── backend/      # Backend service and API (+ database access)
 ├── frontend/     # Browser frontend
 ├── database/     # Database schema, migrations, and seed data
+├── requirements/ # Functional & non-functional requirements, user stories, journeys
 └── ...           # Agent catalog and delivery-process docs (see below)
 ```
 
@@ -39,7 +40,7 @@ iterations.
 The app is built by a team of AI agents grouped by department. Each role is a
 standalone markdown file under its department folder (`engineering/`, `product/`,
 `data/`, `security/`, `testing/`, `design/`, `delivery-management/`,
-`marketing/`, `studio-operations/`).
+`studio-operations/`).
 
 - [`docs/agent-catalog.md`](docs/agent-catalog.md) — the roles and their
   responsibilities.
