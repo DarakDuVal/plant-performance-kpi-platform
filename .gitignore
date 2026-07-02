@@ -25,6 +25,7 @@ logs/
 .DS_Store
 Thumbs.db
 *.swp
+.idea/
 
 # Test / coverage output
 coverage/
