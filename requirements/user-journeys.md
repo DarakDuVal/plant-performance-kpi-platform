@@ -18,6 +18,7 @@ target iteration so journeys are resolved stepwise.
 | UJ-004 | Executive / plant manager / plant controller | Analyse a single KPI's trend, status, benchmark, and context | MUST     | 1         | Draft  |
 | UJ-005 | Executive / plant manager            | Compare cost-relevant KPIs across plants in a Pareto view    | MUST     | 1         | Draft  |
 | UJ-006 | Executive / plant manager / admin    | Review which KPIs are available (tracked) per plant          | MUST     | 1         | Draft  |
+| UJ-007 | New / any user                       | Onboard and get self-service support (tour, release notes, about) | SHOULD   | 1         | Draft  |
 
 ---
 
@@ -32,8 +33,9 @@ target iteration so journeys are resolved stepwise.
 | ---- | ------------------------------------------------------------------ | ----------------- | --------------------------------------------------------- | -------------- |
 | 1    | Open the executive summary                                         | Executive summary | Needs a single, consolidated view of all active KPIs      | US-001         |
 | 2    | Select the entity (ME total or a plant) and the reporting year     | Executive summary | Needs to focus on one scope and compare against prior years | US-002, US-003 |
-| 3    | Scan the KPI list and its red / yellow / green status indicators   | Executive summary | Needs to spot under-performing KPIs quickly               | US-001         |
-| 4    | Read each KPI's target, YTD actual, latest forecast and update date | Executive summary | Needs to judge magnitude of deviation and data freshness  | US-001         |
+| 3    | Personalise which KPIs appear in the view (custom selection)       | Executive summary | Needs to see only KPIs relevant to their work or domain   | US-017         |
+| 4    | Scan the KPI list and its red / yellow / green status indicators   | Executive summary | Needs to spot under-performing KPIs quickly               | US-001         |
+| 5    | Read each KPI's target, YTD actual, latest forecast and update date | Executive summary | Needs to judge magnitude of deviation and data freshness  | US-001         |
 
 ---
 
@@ -66,6 +68,7 @@ target iteration so journeys are resolved stepwise.
 | 2    | Locate the KPI value to correct                     | Data maintenance | Needs to find the right value quickly               | US-008  |
 | 3    | Modify / correct the value interactively            | Data maintenance | Needs to fix wrong values without a data re-import   | US-008  |
 | 4    | Save the change and see it reflected in the app     | Data maintenance | Needs confidence the correction took effect          | US-008  |
+| 5    | A programmatic client pushes KPI data non-interactively via the API | Data API | Needs unattended, automated data updates (later automation) | US-009  |
 
 ---
 
@@ -80,10 +83,12 @@ target iteration so journeys are resolved stepwise.
 | ---- | ------------------------------------------------------------------------ | ----------- | -------------------------------------------------------- | -------------- |
 | 1    | Open a KPI's detail view                                                 | KPI detail  | Needs to drill into one KPI                              | US-010         |
 | 2    | Review annual actuals and targets, plus the running year's forecast      | KPI detail  | Needs to see multi-year development and where it is heading | US-010         |
-| 3    | Review the monthly actuals-vs-target trend for the selected year         | KPI detail  | Needs intra-year detail                                  | US-011         |
-| 4    | Read the goal status, benchmark plant, and data sources                  | KPI detail  | Needs to judge status and see who leads and where data is from | US-012, US-013, US-014 |
-| 5    | Hover a data point to see its data source and last refresh date          | KPI detail  | Needs provenance and freshness per point                 | US-014         |
-| 6    | Add a note giving executives extra context (privileged users)            | KPI detail  | Needs to explain anomalies or decisions                  | US-015         |
+| 3    | Review the intra-year actuals-vs-target trend for the selected year      | KPI detail  | Needs intra-year detail                                  | US-011         |
+| 4    | For a KPI without a time series, review the gauge-versus-target display   | KPI detail  | Needs status for KPIs that have no trend                  | US-016         |
+| 5    | Read the goal status, benchmark plant, and data sources                  | KPI detail  | Needs to judge status and see who leads and where data is from | US-012, US-013, US-014 |
+| 6    | Open the KPI's descriptive metadata for context (unit, owner, and more)  | KPI detail  | Needs to understand what the KPI represents               | US-019         |
+| 7    | Hover a data point to see its data source and last refresh date          | KPI detail  | Needs provenance and freshness per point                 | US-014         |
+| 8    | Add a note giving executives extra context (privileged users)            | KPI detail  | Needs to explain anomalies or decisions                  | US-015         |
 
 ---
 
@@ -113,3 +118,18 @@ target iteration so journeys are resolved stepwise.
 | 1    | Open the availability tab                          | Availability view  | Needs a single place to see coverage                  | US-020  |
 | 2    | Read the availability state per KPI and plant      | Availability view  | Needs to see which plants are tracked for which KPIs  | US-020  |
 | 3    | Edit the per-cell (KPI/plant) availability note (super users) | Availability view  | Needs to explain why a cell is false / limited / invalid | US-024  |
+
+---
+
+## UJ-007 — Onboard and get self-service support
+
+- **Persona:** New and returning users of the app.
+- **Goal:** Learn the app and find help and information without external support.
+- **Trigger:** A user opens the app for the first time or looks for help / information.
+- **Success:** The user can take a guided tour, read the release notes, and find purpose, contacts, support and FAQ on the About page.
+
+| Step | Action                                                              | Touchpoint    | Pain point / need                                  | Stories |
+| ---- | ------------------------------------------------------------------ | ------------- | -------------------------------------------------- | ------- |
+| 1    | Take the guided first-use tour                                     | Guided tour   | Needs to learn the app quickly                      | US-022  |
+| 2    | Read the release notes to see what changed                        | Release notes | Needs to stay informed of app changes               | US-021  |
+| 3    | Open the About page for purpose, contacts, support and FAQ        | About page    | Needs to understand the app and find help           | US-023  |

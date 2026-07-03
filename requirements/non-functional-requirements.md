@@ -16,7 +16,7 @@ target iteration so requirements are resolved stepwise.
 | NFR-002 | Security  | MUST     | The application shall be accessible only from within the Bosch corporate network.                                                                                | Access attempt from outside the Bosch network is denied (network / security test) | 1         | Specified   |
 | NFR-003 | Usability | MUST     | The application shall be operable as a desktop web-browser application for the first releases.                                                                   | Functional verification on the supported desktop browsers  | 1         | Specified   |
 | NFR-004 | Portability | COULD  | The application shall additionally support mobile app access in later versions.                                                                                  | Access verified on the target mobile devices               | 3         | Specified   |
-| NFR-005 | Performance | MUST   | The application shall respond to a user selection within a few hundred milliseconds typically (under 1 s best case) and no more than 3 s under heavy load.        | UI response-time measurement under normal and heavy load (e.g. p95) | 1         | Specified   |
+| NFR-005 | Performance | MUST   | The application shall respond to a user selection within 1 s under normal load (p95) and no more than 3 s under heavy load.                                       | UI response-time measurement under normal and heavy load (e.g. p95) | 1         | Specified   |
 
 **Categories:** Performance · Reliability · Security · Maintainability · Scalability · Usability · Compliance ·
 Portability.
